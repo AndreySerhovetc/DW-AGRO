@@ -1,0 +1,41 @@
+.about-company {
+    padding-top: 60px;
+    &__container {
+        margin-bottom: 60px;
+    }
+    &-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media(max-width: 950px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    &__pic {
+        max-width: 100%;
+        height: auto;
+        margin-left: 40px;
+        object-fit: cover;
+        @media(max-width: 950px) {
+            margin-top: 40px;
+            margin-left: 0;
+            padding: 0 15px;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-top: 50px;
+    }
+    &__text {
+        padding-top: 20px;
+    }
+    &__desc {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.company-name {
+    color: $accent-color;
+}

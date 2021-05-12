@@ -1,0 +1,21 @@
+@import "_vars.scss";
+@import "_basic.scss";
+@import "_fonts.scss";
+@import "_mixin.scss";
+@import "_button.scss";
+@import "_top-header.scss";
+@import "_header-nav.scss";
+@import "index/_slider.scss";
+@import "index/_about-company.scss";
+@import "index/_product.scss";
+@import "index/_service.scss";
+@import "index/_contact.scss";
+@import "_footer.scss";
+//about company
+@import "about-company/company";
+//products
+@import "products/products";
+//clients
+@import "clients/clients";
+//contact
+@import "contact-page/contact-page";

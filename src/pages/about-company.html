@@ -1,0 +1,42 @@
+@@include('block/header.html')
+<section class="company">
+    <div class="top-img">
+        <div class="overlay-img"></div>
+        <img class="top-img__pic" src="img/company.jpg" alt="about-company">
+        <div class="title title--page">
+            <h1 class="section-title section-title--page">О Компании</h1>
+            <span class="white-line"></span>
+        </div>
+    </div>
+    <div class="container company__container">
+        <p class="company-desc"><strong>DW AGRO</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi beatae voluptas ullam voluptatum minus aut odit vero suscipit. Atque, enim laborum consectetur non, maiores laudantium placeat optio eius necessitatibus fuga
+            expedita rem excepturi ex nisi voluptatibus. Possimus minus nulla eius dolore quae laboriosam vel, doloribus nam quis, repellendus suscipit sequi similique ratione mollitia necessitatibus tempora maxime. Inventore reprehenderit placeat sapiente
+            expedita ad incidunt accusantium vero explicabo quos esse deserunt ipsam dolorem, in debitis eum nostrum voluptas sed eligendi illum amet? Nihil placeat earum, fugit fugiat quia, voluptatibus provident tempore illo laboriosam nobis id vitae
+            accusamus hic deleniti illum iste voluptatum ex, sapiente qui voluptatem dolores necessitatibus? Laudantium dolore excepturi officia quos unde facilis maiores. Quidem enim ipsum reprehenderit, quae, inventore amet, corporis sequi laboriosam
+            veniam adipisci aspernatur dicta! Molestiae quia sequi voluptatem commodi repellat, earum iusto eligendi accusantium. Modi, dolor consectetur. Est sed aliquam beatae quod! Quaerat odio distinctio facere?</p>
+    </div>
+</section>
+<section class="contact-modal">
+    <div class="container contact-modal__container">
+        <h4 class="contact-modal__text">Для дополнительной информации</h4>
+        <a class="btn btn-contact" data-modal>Связаться с нами</a>
+
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <p class="modal__title">Задать вопрос</p>
+                <div class="modal__close" data-close>&times;</div>
+                <form action="mail.php" class="form form-contact js-form" method="POST">
+                    <input class="form__input form-contact__input" type="text" name="user_name" data-validate-field="name" placeholder="Имя" required>
+                    <input class="form__input form-contact__input phone" type="tel" name="user_phone" data-validate-field="phone" placeholder="Номер телефона" required>
+                    <input class="form__input form-contact__input" type="email" name="user_email" data-validate-field="email" placeholder="Email" required>
+                    <input class="form__input form-contact__input" type="text" name="user_service" data-validate-field="service" placeholder="Интересующий товар/услуга" required>
+                    <textarea class="form__input form-contact__input form__area" name="user_mess" id="" cols="30" rows="10" wrap="soft" placeholder="Сообщение"></textarea>
+                    <button class="modal__submit" type="submit" href="#">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('block/footer.html')

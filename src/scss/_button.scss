@@ -1,0 +1,31 @@
+.btn {
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: $accent-color;
+    border: none;
+    text-transform: uppercase;
+    &-more-info {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 30px;
+        &:hover {
+            background-color: lighten($accent-color, 10%);
+        }
+    }
+    &-contact {
+        background-color: black;
+        &:hover {
+            background-color: lighten(black, 25%);
+        }
+    }
+    &-hover {
+        width: 190px;
+        background-color: #121212;
+        &:hover {
+            background-color: ligten(#121212, 10%);
+        }
+    }
+}

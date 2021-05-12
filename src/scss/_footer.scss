@@ -1,0 +1,65 @@
+.footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #fff;
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        @media(max-width: 428px) {
+            margin-top: 20px;
+        }
+    }
+    &-nav {
+        &__item {
+            margin-bottom: 17px;
+        }
+        &__link {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &-company {
+        &__name {
+            padding-bottom: 15px;
+        }
+        &__desc {
+            padding-bottom: 25px;
+        }
+    }
+    &-map {
+        &__icon {
+            width: 30px;
+            height: 30px;
+        }
+        &__point {
+            margin-left: 10px;
+        }
+    }
+    &-phone {
+        &__number {
+            margin-left: 10px;
+        }
+    }
+    &-email {
+        &__address {
+            margin-left: 10px;
+        }
+    }
+    &-map,
+    &-phone,
+    &-email {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+}

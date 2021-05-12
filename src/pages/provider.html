@@ -1,0 +1,87 @@
+@@include('block/header.html')
+<section class="provider">
+    <div class="top-img">
+        <div class="overlay-img"></div>
+        <img class="top-img__pic" src="img/provider.jpg" alt="provider">
+        <div class="title title--page">
+            <h1 class="section-title section-title--page">Сотрудничество</h1>
+            <span class="white-line"></span>
+        </div>
+    </div>
+    <div class="container provider__container">
+        <div class="provider-desc">
+            <p class="provider-desc__text">Мы предлагаем сотрудничество всем компаниям, которые заинтересованы в стабильных поставках зерновых культур. Соя, рапс, просо, сорго — сейчас это основные наши товары. Также до списка наших предложений входят — лен, горчица, подсолнечник,
+                горох желтый, люпин, кориандр, гречка, сафлор, вика, пелюшка, пшено и другие крупы. Работаем на условиях FCA, DAP (DDU), в отдельных случаях — DDP, DAF и CIF. В основном транспортируем зерно собственным автотранспортом по 21–22 т., упакованное
+                в мешки биг-беги по 1т. При необходимости мы можем взять на себя все операции по таможенной очистке в Евросоюзе. Чтобы связаться с нами зайдите в меню «Контакты», позвоните или напишите e-mail, и мы сделаем Вам выгодное предложение. Работая
+                с нами, Вы можете быть уверены в том, что получите зерно высшего качества в кротчайшие сроки. Наши преимущества это: Высокое качество — мы всегда тщательно следим за тем, что бы наше зерно полностью отвечало желаниям и требованиям наших
+                клиентов;
+                <br><strong>Выгодные цены</strong> — знание рынка, тесные связи с фермерскими хозяйствами Украины.
+                <br><strong>Надежность</strong> — мы всегда делаем все возможное, что бы вовремя исполнить свои обязательства, наши клиенты всегда могут быть уверены в нас; Стабильность и опытность — успешная работа в аграрном бизнесе с 2015.
+                <br><strong>Ответственность</strong> — мы знаем, насколько важно, получить сырье необходимого качества в кротчайшие сроки. Мы дорожим своей репутацией, ценим каждого нашего партнера и всегда стараемся обеспечить стабильные и регулярные
+                поставки качественного зерна. <br><strong>Удобность и высокий уровень сервиса</strong> — мы поставляем зерно своим партнерам прямо на склад и предоставляем помощь в таможенных операциях.
+                <br><strong>Открытость</strong> — мы полностью прозрачны, всегда рады встретится с Вами, и ответить на все Ваши вопросы. Гибкость — мы всегда идем навстречу своим партнерам, выбираем только лучший вариант для своего клиента и быстро решаем
+                все возникшие проблемы. Мы уделяем каждому клиенту огромное внимание, всегда стараемся построить долговременные партнерские отношения на доверии и взаимной уверенности. У нас работает команда опытных и знающих свое дело специалистов, умеющих
+                четко и слаженно выполнять все необходимое для достижения результата. <strong>Доказательство этого</strong> — наши партнеры по всей Европе, которые уже стали нашими друзьями.</p>
+        </div>
+        <!-- <table class="info">
+            <thead>
+                <tr>
+                    <th>Наименование</th>
+                    <th>Влажность</th>
+                    <th>Чистота</th>
+                    <th>Цена за т.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячмень</td>
+                    <td>12</td>
+                    <td>50%</td>
+                    <td>По договор</td>
+                </tr>
+                <tr>
+                    <td>Просо</td>
+                    <td>13,5</td>
+                    <td>99</td>
+                    <td>По догв.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+</section>
+<section class="contact-modal">
+    <div class="container contact-modal__container">
+        <h4 class="contact-modal__text">Для дополнительной информации</h4>
+        <a class="btn btn-contact" data-modal>Связаться с нами</a>
+
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <p class="modal__title">Задать вопрос</p>
+                <div class="modal__close" data-close>&times;</div>
+                <form action="mail.php" class="form form-contact js-form" method="POST">
+                    <input class="form__input form-contact__input" type="text" name="user_name" data-validate-field="name" placeholder="Имя" required>
+                    <input class="form__input form-contact__input phone" type="tel" name="user_phone" data-validate-field="phone" placeholder="Номер телефона" required>
+                    <input class="form__input form-contact__input" type="email" name="user_email" data-validate-field="email" placeholder="Email" required>
+                    <input class="form__input form-contact__input" type="text" name="user_service" data-validate-field="service" placeholder="Интересующий товар/услуга" required>
+                    <textarea class="form__input form-contact__input form__area" name="user_mess" id="" cols="30" rows="10" wrap="soft" placeholder="Сообщение"></textarea>
+                    <button class="modal__submit" type="submit" href="#">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('block/footer.html')
